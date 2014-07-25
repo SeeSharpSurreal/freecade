@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <title>
       FreeCade Home
     </title>
@@ -39,7 +43,7 @@
       padding-bottom: 6px;
     }
 
-    img{
+    .navbar img{
       display: inline;
       padding-left: 5px;
     }
@@ -73,6 +77,10 @@
       font-size: 14px;
     }
 
+    .carousel-pic {
+      margin: auto;
+    }
+
     </style>
   </head>
   <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
@@ -91,7 +99,45 @@
         <li class="inline"><a href="#">Misc</a>.</li>
       </ul>
     </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slider-one.png" class="carousel-pic" alt="...">
+          <div class="carousel-caption">
+            Welcome to Freecade.
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slider-two.png" class="carousel-pic" alt="...">
+          <div class="carousel-caption">
+            Play the hottest games.
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slider-three.png" class="carousel-pic" alt="...">
+          <div class="carousel-caption">
+            Something for everyone.
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
 
   </body>
 
